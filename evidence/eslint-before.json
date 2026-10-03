@@ -1,0 +1,56 @@
+[
+  {
+    "filePath": "examples/vulnerable/core.js",
+    "messages": [
+      {
+        "ruleId": "no-eval",
+        "severity": 2,
+        "message": "`eval` can be harmful.",
+        "line": 4,
+        "column": 10,
+        "messageId": "unexpected",
+        "endLine": 4,
+        "endColumn": 14
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "// BASELINE EDUCATIVA: implementación insegura de app/core.js::parseMinutes.\n// No ejecutar con entradas no confiables. No se incluye en el despliegue.\nexport function parseMinutes(userInput) {\n  return eval(userInput);\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "examples/vulnerable/rendering.js",
+    "messages": [
+      {
+        "ruleId": "no-unsanitized/property",
+        "severity": 2,
+        "message": "Unsafe assignment to innerHTML (Variable 'userInput' declared as function parameter, which is considered unsafe. 'FunctionDeclaration' at 3:7)",
+        "line": 4,
+        "column": 3,
+        "endLine": 4,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-unsanitized/property",
+        "severity": 2,
+        "message": "Unsafe assignment to innerHTML (Variable 'userInput' declared as function parameter, which is considered unsafe. 'FunctionDeclaration' at 6:7)",
+        "line": 7,
+        "column": 3,
+        "endLine": 7,
+        "endColumn": 32
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "// BASELINE EDUCATIVA: implementaciones previas de las funciones de app/rendering.js.\n// Se analizan como código fuente. No se incluyen en el despliegue.\nexport function renderTitle(element, userInput) {\n  element.innerHTML = userInput;\n}\nexport function renderDescription(element, userInput) {\n  element.innerHTML = userInput;\n}\n",
+    "usedDeprecatedRules": []
+  }
+]

@@ -1,0 +1,10 @@
+import {readFile, writeFile} from 'node:fs/promises';
+const read = async name => JSON.parse(await readFile('reports/'+name+'.json','utf8'));
+const counts = report => Object.fromEntries(['critical','high','medium','low','warning'].map(level => [level,(report[level] || []).length]));
+const before = counts(await read('bearer-before')); const after = counts(await read('bearer-after'));
+const total = counts => Object.values(counts).reduce((a,b)=>a+b,0);
+const eslintCount = report => report.reduce((n,item)=>n+item.errorCount+item.warningCount,0);
+const summary = {generatedAt:new Date().toISOString(), bearer:{before,after,totalBefore:total(before),totalAfter:total(after)},eslint:{before:eslintCount(await read('eslint-before')),after:eslintCount(await read('eslint-after'))}};
+await writeFile('reports/summary.json',JSON.stringify(summary,null,2));
+console.log(JSON.stringify(summary,null,2));
+if (!summary.bearer.totalBefore || summary.bearer.totalAfter || summary.eslint.after) process.exitCode=1;
