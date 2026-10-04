@@ -1,10 +1,10 @@
 # Análisis de vulnerabilidades y despliegue automatizado de una app con Bearer CLI y ESLint
 
-**Autores: Gabriela Estefania Cohaila Alvarado y Jhony Vargas Luque.**
+**Autora: Gabriela Estefania Cohaila Alvarado.** Proyecto desarrollado junto con Jhony Vargas Luque.
 
 En este proyecto construimos **Notas Seguras**, una aplicación de tareas en JavaScript, para estudiar cómo detectar y corregir problemas de seguridad antes de publicar una nueva versión. Comparamos implementaciones educativas inseguras con el código corregido mediante **Bearer CLI** y **ESLint con reglas de seguridad**, y conectamos los controles con un despliegue automatizado en **GitHub Pages**.
 
-Los resultados fueron concretos: Bearer reportó dos hallazgos altos en los componentes vulnerables; ESLint señaló esos mismos puntos y un uso adicional de `eval`. Después de corregir el código, ambos analizadores terminaron sin hallazgos en la aplicación publicable y las cinco pruebas de regresión pasaron. En este artículo presentamos conjuntamente los hallazgos, las correcciones y la automatización.
+Los resultados fueron concretos: Bearer reportó dos hallazgos altos en los componentes vulnerables; ESLint señaló esos mismos puntos y un uso adicional de `eval`. Después de corregir el código, ambos analizadores terminaron sin hallazgos en la aplicación publicable y las cinco pruebas de regresión pasaron. En este artículo explico los hallazgos y las correcciones; Jhony presenta la automatización y el despliegue en su artículo complementario.
 
 ## Código, aplicación y video del equipo
 
