@@ -8,7 +8,9 @@ Autores: Gabriela Estefania Cohaila Alvarado y Jhony Vargas Luque.
 - [Ejecuciones de GitHub Actions](https://github.com/GabrielaCohailaAlvaradoE/notas-seguras-sast/actions)
 - [Workflow](.github/workflows/security-and-deploy.yml)
 - [Evidencia del análisis](evidence/)
-- [Material para los artículos y la exposición](docs/)
+- [Artículo grupal y material para la exposición](docs/)
+
+La entrega del equipo consiste en **un único artículo firmado por ambos autores y un video conjunto de máximo cinco minutos**. El [artículo grupal](docs/articulo-grupal.md) reúne el análisis y el despliegue; el [guion](docs/guion-video.md) reparte la narración entre Gabriela y Jhony. El artículo se publica una sola vez y se comparte una URL del artículo y una URL del video.
 
 ## Qué hace la aplicación
 

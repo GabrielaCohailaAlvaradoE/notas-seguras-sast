@@ -1,9 +1,8 @@
 # Material de publicación
 
-Estos archivos son **borradores completos para publicar en las cuentas de cada integrante**, no artículos ya publicados en DEV, Medium o Hashnode. Sustituir el marcador del video después de grabarlo y publicarlo.
+El equipo entrega **un único artículo grupal**, firmado por Gabriela Estefania Cohaila Alvarado y Jhony Vargas Luque, y un video conjunto de máximo cinco minutos. Una sola persona puede publicar el artículo desde su cuenta, manteniendo visibles los nombres de ambos autores.
 
-- [Artículo de Gabriela](articulo-gabriela.md): hallazgos y correcciones.
-- [Artículo de Jhony](articulo-jhony.md): automatización y despliegue.
+- [Artículo grupal completo](articulo-grupal.md): aplicación, herramientas, hallazgos, correcciones, automatización y despliegue.
 - [Guion conjunto](guion-video.md): diálogo y pantalla, duración objetivo 4:40.
 
-Los artículos deben incluir la URL pública real del video. El equipo debe verificar la duración, publicación y acceso a cada enlace antes de entregar.
+El artículo está listo como borrador y todavía no está publicado en DEV, Medium o Hashnode. Sustituir `VIDEO_URL_PENDIENTE` por la URL pública real del video antes de publicar. Compartir la URL del artículo grupal y la del video en Telegram, e incluirlas en el ZIP de enlaces junto con el repositorio y la app.

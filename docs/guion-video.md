@@ -2,7 +2,7 @@
 
 **Duración objetivo: 4 minutos 40 segundos. Límite de la consigna: 5 minutos.**
 
-Participantes: Gabriela Estefania Cohaila Alvarado y Jhony Vargas Luque. Un solo video conjunto se enlaza en los dos artículos; si el docente exige uno por integrante, cada persona debe publicar su propia grabación adaptando este guion.
+Participantes: Gabriela Estefania Cohaila Alvarado y Jhony Vargas Luque. La entrega consiste en un único artículo grupal firmado por ambos y un video conjunto. El video se enlaza en el artículo y se entrega junto con él.
 
 La columna de pantalla indica qué mostrar, no debe leerse en voz alta. Las intervenciones están escritas para narración pausada. Ensayar una vez con cronómetro y conservar el margen final. Si se muestra una ejecución ya terminada, decirlo tal como está escrito, sin simular que está ocurriendo en vivo.
 
@@ -26,7 +26,7 @@ La columna de pantalla indica qué mostrar, no debe leerse en voz alta. Las inte
 | 2:30–3:00 | Jhony | Ejecutar `npm test` y `npm run scan:eslint`. Mostrar luego el resumen de Bearer ya generado. | «Ejecutamos cinco pruebas de regresión: incluyen entradas de código, texto con etiquetas y datos locales dañados. Todas pasan. ESLint reporta tres errores en los ejemplos y cero en la aplicación. En el informe de Bearer, generado por el análisis, también pasamos de dos hallazgos a cero en la versión corregida.» |
 | 3:00–3:40 | Jhony | Abrir `.github/workflows/security-and-deploy.yml`; señalar eventos, `security`, `needs: security` y `deploy`. | «La automatización está definida en este workflow. Cada push a main ejecuta las pruebas y los dos analizadores, guarda los informes y construye la app. El trabajo deploy depende de security. Si falla un control, esa nueva versión no se publica. En la baseline esperamos hallazgos, pero en el código publicable no forzamos el éxito ni ignoramos errores.» |
 | 3:40–4:15 | Jhony | Abrir la ejecución comprobada de Actions, mostrar ambos trabajos verdes y volver al sitio público. Escribir `<b>Prueba de texto</b>` como título. | «Esta es una ejecución ya completada: los trabajos de seguridad y despliegue finalizaron correctamente. GitHub Pages recibe solamente los seis archivos de la aplicación corregida. En el sitio público, esta entrada con etiquetas aparece literalmente, como texto. Así relacionamos la corrección del código con un comportamiento visible de la aplicación.» |
-| 4:15–4:40 | Gabriela | Mostrar repositorio, app y una pantalla final con los nombres. | «El resultado fue dos a cero en Bearer, tres a cero en ESLint y cinco pruebas aprobadas. Cero hallazgos no significa seguridad absoluta: describe estas reglas y este alcance. Cada integrante publicará su artículo con el repositorio, la app y este video. Después compartiremos los enlaces en Telegram y entregaremos el ZIP solicitado. Gracias.» |
+| 4:15–4:40 | Gabriela | Mostrar repositorio, app y una pantalla final con los nombres de ambos autores. | «El resultado fue dos a cero en Bearer, tres a cero en ESLint y cinco pruebas aprobadas. Cero hallazgos no significa seguridad absoluta: describe estas reglas y este alcance. Publicaremos un único artículo grupal, firmado por ambos, con el repositorio, la app y este video. Compartiremos los enlaces en Telegram y entregaremos el ZIP solicitado. Gracias.» |
 
 ## Pestañas exactas
 
@@ -51,10 +51,8 @@ Repositorio: https://github.com/GabrielaCohailaAlvaradoE/notas-seguras-sast
 
 Aplicación: https://gabrielacohailaalvaradoe.github.io/notas-seguras-sast/
 
-Artículo de Gabriela: ARTICULO_GABRIELA_URL_PENDIENTE
-
-Artículo de Jhony: ARTICULO_JHONY_URL_PENDIENTE
+Artículo grupal de Gabriela y Jhony: ARTICULO_GRUPAL_URL_PENDIENTE
 
 Analizamos únicamente código propio. Los componentes vulnerables son educativos y no forman parte del sitio desplegado.»
 
-Publicar en YouTube con visibilidad **Público** para cumplir literalmente la consigna. Verificar duración inferior a 5:00 y reproducción sin iniciar sesión. Actualizar la descripción cuando ambos artículos estén publicados.
+Publicar en YouTube con visibilidad **Público**. Verificar duración inferior a 5:00 y reproducción sin iniciar sesión. Actualizar la descripción con el enlace del único artículo grupal cuando esté publicado.
